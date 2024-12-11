@@ -6,7 +6,7 @@ require("dotenv").config()
 
 
 exports.userSignup = async (data) => {
-     const {email, user_name, password } = data
+     const {email, user_name, password, phone_no, public_add} = data
 
      const user_data = await userModel.findOne({email})
 
